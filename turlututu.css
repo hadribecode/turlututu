@@ -1,0 +1,165 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin : 0;
+    padding: 0;
+    font-family: sans-serif;   
+  
+}
+.navbar {
+    
+    max-width: 1140px;
+    margin : auto;
+    color : #fff;
+    padding : 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.login {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 12px;
+}
+
+.row {
+
+}
+
+.greynav {
+    background: #333;
+}
+
+.nav_ul {
+    display : flex;
+    margin : 0;
+    padding : 0;
+    justify-content: space-around;
+    width: 600px;
+}
+
+.list_nav
+{
+    list-style: none;
+
+}
+
+.debug {
+    border : 1px solid red;
+}
+.hero{
+    width: 1140px;
+    margin: auto;
+    padding: 20px;
+    display: flex;  
+    color : #fff;
+}
+.blue {
+    background :#1e93cc;
+}
+
+.thumb {
+    width: 33%;
+}
+
+.button{
+    display: inline-block;
+    border-radius: 12px;
+    background-color: #f4511e;
+    border: solid white 2px;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 15px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+
+
+.title2{
+    text-align: center;
+    background: #fff;
+    margin: 0;
+    line-height: 3em;
+    color : #222;
+}
+
+.text {
+    width: 50%;
+}
+
+
+
+.content .row {
+    display: flex;
+    flex-flow: row wrap;
+    max-width: 1140px;
+    margin: auto;
+    color : #fff;
+}
+
+
+.partners {
+   width: 1140px;
+   margin: 0 auto 300px auto;
+   padding: 30px;
+   display: flex; 
+   flex-flow: row wrap;  
+
+}
+
+footer {
+    width: 1140px;
+    margin : auto;
+    padding : 20px;
+    color :#fff;
+}
+
+footer ul {
+    display : flex;
+    justify-content: space-around;
+}
+footer ul li {
+    list-style: none;
+}
+
+.title{
+  
+}
+
+.lastbutons {
+    width: 1140px;
+    display: flex;
+    justify-content: space-around;
+
+}
