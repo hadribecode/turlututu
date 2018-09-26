@@ -1,13 +1,34 @@
+
+$bgcolorfooter: lightgrey;
+$bgcolorbodytop: lightblue;
+
+@mixin boutons {
+    display: inline-block;
+    border-radius: 12px;
+    background-color: #f4511e;
+    border: solid white 2px;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 15px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    
+}
+
+
 * {
     box-sizing: border-box;
 }
 
 body {
+    background-color: $bgcolorfooter;
     margin : 0;
     padding: 0;
     font-family: sans-serif;   
-    background-color: white;
-}
+
 }
 .navbar {
     
@@ -17,6 +38,7 @@ body {
     padding : 10px 0;
     display: flex;
     justify-content: space-between;
+
 }
 
 .login {
@@ -34,7 +56,7 @@ body {
     background: #333;
 }
 
-.nav_ul {
+ul {
     display : flex;
     margin : 0;
     padding : 0;
@@ -42,8 +64,8 @@ body {
     width: 600px;
 }
 
-.list_nav
-{
+
+.list_nav{
     list-style: none;
     color: white;
 
@@ -60,52 +82,31 @@ body {
     color : #fff;
 }
 .blue {
-    background :#1e93cc;
+    background: $bgcolorbodytop;
 }
 
 .thumb {
     width: 33%;
 }
-
-.button{
-    display: inline-block;
-    border-radius: 12px;
-    background-color: #f4511e;
-    border: solid white 2px;
-    color: #FFFFFF;
-    text-align: center;
-    font-size: 15px;
-    padding: 20px;
-    width: 200px;
-    transition: all 0.5s;
-    cursor: pointer;
-    margin: 5px;
-  }
-  
-  .button span {
+.button{ @include boutons ();
+    span {
     cursor: pointer;
     display: inline-block;
     position: relative;
     transition: 0.5s;
-  }
-  
-  .button span:after {
+span:after {
     content: '\00bb';
     position: absolute;
     opacity: 0;
     top: 0;
     right: -20px;
     transition: 0.5s;
-  }
-  
-  .button:hover span {
+    &:hover span {
     padding-right: 25px;
+        }
+    }
   }
-  
-  .button:hover span:after {
-    opacity: 1;
-    right: 0;
-  }
+}
 
 
 
@@ -152,11 +153,10 @@ footer {
 footer ul {
     display : flex;
     justify-content: space-around;
-}
-footer ul li {
+        ul li {
     list-style: none;
 }
-
+}
 .title{
   
 }
@@ -175,12 +175,10 @@ footer ul li {
     height: 100%;
     display: flex;
     justify-content: space-around;
-
+    img{
+        max-width: 0 auto;
+        max-height: 12vh;
+        display: flex;
+        justify-content: center;
 }
-
-.logo img{
-    max-width: 0 auto;
-    max-height: 12vh;
-    display: flex;
-    justify-content: center;
 }
